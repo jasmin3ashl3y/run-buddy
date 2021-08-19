@@ -3,6 +3,27 @@
     padding: 0;
     box-sizing: border-box;
   }
+  /* Hero Style Start */
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  /* Hero Style End */
+  /* Hero Form Start */
+.hero-form {
+    border: 3px solid #024e76;
+    background-color: #fce138;
+    padding: 20px;
+    width: 500px;
+    color: #024e76;
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
+}
+  /* Hero Style End */
 body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
@@ -54,4 +75,7 @@ header {
   }
   footer a {
     color: #024e76;
+  }
+  section {
+    padding: 60px;
   }
