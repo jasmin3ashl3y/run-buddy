@@ -52,6 +52,8 @@
 
   /* Hero Style End */
 
+  /* What You Do start */
+
   .section-title {
     font-size: 55px;
     color: #024e76;
@@ -66,8 +68,6 @@
   .secondary-border {
     border-color: #39a6b2;
   }
-
-  /* What You Do start */
 
   .intro {
     text-align: center;
@@ -151,6 +151,8 @@
     line-height: 1.3;
   }
 
+  /* Meet The Trainers end */
+
   /* Reach Out start */
 
   .contact {
@@ -186,9 +188,7 @@
     color: #fce138;
   }
 
-  /* reach Out end */
-
-  /* Meet The Trainers end */
+  /* Reach Out end */
 
   body {
     color: #39a6b2;
