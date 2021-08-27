@@ -4,6 +4,10 @@
     box-sizing: border-box;
   }
 
+  .flex-row {
+    display: flex;
+  }
+
   /* Hero Style Start */
 
 .hero {
@@ -72,12 +76,13 @@
   /* What You Do start */
 
   .section-title {
+    text-align: center;
+    width: 50%;
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
     border-bottom: 3px solid;
+    padding-bottom: 20px;
+    margin: 0 auto 35px auto;
   }
   .primary-border {
     border-color: #fce138;
@@ -85,11 +90,8 @@
   .secondary-border {
     border-color: #39a6b2;
   }
-
-  .intro {
-    text-align: center;
-  }
   .intro p {
+    text-align: center;
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
@@ -102,7 +104,6 @@
   /* What We Do start */
 
   .steps {
-      text-align: center;
       background: #fce138;
   }
   .steps div {
@@ -130,7 +131,6 @@
   /* Meet The Trainers start */
 
   .trainers {
-    text-align: center;
   }
   .trainer {
     width: 900px;
@@ -173,8 +173,7 @@
   /* Reach Out start */
 
   .contact {
-    text-align: center;
-     background: #024e76;
+    background: #024e76;
   }
   .contact h2 {
     color: #fce138;
