@@ -12,3 +12,5 @@ https://jasmin3ashl3y.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by jasmin3ashl3y
+
+# Run Buddy Inc.
