@@ -7,18 +7,26 @@
   .flex-row {
     display: flex;
   }
+  .some-class {
+    text-shadow: 5px 10px 15px black;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
+  }
+
 
   /* Hero Style Start */
 
-.hero {
+  .hero {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    background-image: url("../images/hero-bg.jpg");
     height: 600px;
+    position: relative;
+    background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
-    position: relative;
+    background-attachment: fixed;
+    background-position: 80%;
   }
   .hero-cta {
     width: 35%;
@@ -26,16 +34,17 @@
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 1.2;
   }
   .hero-cta h2 {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
-.hero-form {
+  .hero-form {
     border: 3px solid #024e76;
-    background-color: #fce138;
+    background-color: rgb(252, 225, 56, 0.8);
     padding: 20px;
     width: 40%;
     margin: 3.5%;
@@ -43,15 +52,17 @@
     position: absolute;
     bottom: 120px;
     right: 140px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 }
-.hero-form h3 {
+  .hero-form h3 {
     font-size: 24px;
     margin:0;
 }
-.hero-form p {
+  .hero-form p {
     margin: 5px 0 15px 0;
 }
-.form-input {
+  .form-input {
     border: 1px solid #024e76;
     display: block;
     padding: 7px 15px;
@@ -59,6 +70,7 @@
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
   }
   .hero-form label {
     margin: 0 5px;
@@ -69,6 +81,7 @@
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 10px;
   }
 
   /* Hero Style End */
@@ -78,7 +91,7 @@
   .section-title {
     text-align: center;
     width: 50%;
-    font-size: 55px;
+    font-size: 48px;
     color: #024e76;
     border-bottom: 3px solid;
     padding-bottom: 20px;
@@ -235,6 +248,7 @@
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
   }
   .contact-form button {
     width: 100%;
@@ -244,6 +258,7 @@
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
   }
 
   /* Reach Out end */
@@ -261,12 +276,22 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    position: relative;
   }
   header h1 {
     font-weight: bold;
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   header a {
     text-decoration: none;
@@ -283,9 +308,10 @@
     list-style: none;
   }
   header nav ul li a {
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   footer {
     justify-content: space-between;
@@ -309,3 +335,23 @@
   section {
     padding: 60px;
   }
+    /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  header h1 {
+    /* this will be applied on any screen between 768px and 575px */
+    font-size: 80px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header h1 {
+    /* this will be applied on any screen smaller than 575px */
+    font-size: 100px;
+  }
+}
